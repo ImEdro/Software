@@ -1,11 +1,24 @@
-
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package Modelo;
 
-
+/**
+ *
+ * @author willy
+ */
 public class Usuario {
-
     private String usuario;
-    private String clave;
+    private String contrasena;
+    private String tipoUsuario;
+
+    public Usuario(String usuario, String contrasena, String tipoUsuario) {
+        this.usuario = usuario;
+        this.contrasena = contrasena;
+        this.tipoUsuario = tipoUsuario;
+    }
 
     public String getUsuario() {
         return usuario;
@@ -15,20 +28,21 @@ public class Usuario {
         this.usuario = usuario;
     }
 
-    public String getClave() {
-        return clave;
+    public String getContrasena() {
+        return contrasena;
     }
 
-    public void setClave(String clave) {
-        this.clave = clave;
+    public void setContrasena(String contrasena) {
+        this.contrasena = contrasena;
     }
 
-    @Override
-    public String toString() {
-        return "Usuario{" + "usuario=" + usuario + ", clave=" + clave + '}';
+    public String getTipoUsuario() {
+        return tipoUsuario;
     }
-    
-    
+
+    public void setTipoUsuario(String tipoUsuario) {
+        this.tipoUsuario = tipoUsuario;
+    }
     
     
 }
